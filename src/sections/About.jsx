@@ -90,7 +90,13 @@ const About = () => {
                 I'm based in Philippines, but I can work with you regardless of
                 your location.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <a href="#contact">
+                <Button
+                  name="Contact Me"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </a>
             </div>
           </div>
         </div>

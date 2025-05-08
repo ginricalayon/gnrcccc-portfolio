@@ -24,48 +24,10 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: "Maynard Quitoriano",
-    position: "69 position",
-    img: "assets/review1.png",
-    review:
-      "Isa 'to sa pinakamabait na tropa. Ako na nga lang nagsasabi na gumawa naman siya ng masama, eh.",
-  },
-  {
-    id: 2,
-    name: "Lawrence Cedric Chucas",
-    position: "84 position",
-    img: "assets/review2.png",
-    review: "IT Course ko pero na-scam ako. Hahahahahahaha.",
-  },
-  {
-    id: 3,
-    name: "Ipher Jude Gudmalin",
-    position: "Any position",
-    img: "assets/review3.png",
-    review:
-      "Wala ng talking stage talking stage yayain agad lumabas at alam mo na.",
-  },
-  {
-    id: 4,
-    name: "Aron Ruiz",
-    position: "Any role",
-    img: "assets/review4.png",
-    review: "Hindi ko kilala si Tricia, mas lalo naman si Lira.",
-  },
-  {
-    id: 5,
-    name: "Jayson Balcon",
+    name: "Juana Reas",
     position: "CEO",
     img: "assets/review4.png",
-    review: "Daing ng ating bayan!!!",
-  },
-  {
-    id: 6,
-    name: "Jeric Olarte",
-    position: "Master Roshi",
-    img: "assets/review4.png",
-    review:
-      "Okay lang kahit wala ako sa top 5 n'yo, nasa top 5 ako ng mga nasa top 5 n'yo.",
+    review: "Basta basta basta basta",
   },
 ];
 
