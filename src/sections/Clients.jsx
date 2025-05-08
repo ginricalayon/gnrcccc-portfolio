@@ -5,7 +5,7 @@ const Clients = () => {
   return (
     <section className="sm:px-10 px-5 my-20">
       <h3 className="sm:text-4xl text-3xl font-semibold bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent">
-        Hear from My Plastic Clients
+        Hear from My Clients
       </h3>
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-12">
