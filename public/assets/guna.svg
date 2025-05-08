@@ -1,0 +1,22 @@
+<!-- filepath: c:\Users\erica\Desktop\gnrcccc-portfolio\guna-ui-logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="gunaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0675B5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ADEF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect x="5" y="5" width="90" height="90" rx="10" ry="10" fill="url(#gunaGradient)"/>
+  
+  <!-- Stylized G -->
+  <path d="M55,30 A20,20 0 1,0 55,70 L55,60 A10,10 0 1,1 55,40 L55,30 Z" fill="#FFFFFF"/>
+  
+  <!-- UI text -->
+  <text x="65" y="55" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">UI</text>
+  
+  <!-- Bottom decorative element -->
+  <rect x="20" y="75" width="60" height="3" fill="#FFFFFF" opacity="0.5"/>
+</svg>

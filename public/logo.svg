@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Enhanced background gradients -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#093d1e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#095c2f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a7d3e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7df5b1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="0" dy="0" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Base Shape - Rounded Octagon -->
+  <path d="M100,15 L160,35 L185,85 L185,115 L160,165 L100,185 L40,165 L15,115 L15,85 L40,35 Z" 
+        fill="url(#bgGradient)" 
+        stroke="#0a3d0a" 
+        stroke-width="2"
+        filter="url(#shadow)" />
+  
+  <!-- Inner pattern -->
+  <path d="M45,50 L155,50 L155,150 L45,150 Z" 
+        fill="none" 
+        stroke="#19a64f" 
+        stroke-width="1.5" 
+        stroke-dasharray="2,3" 
+        opacity="0.3" />
+  
+  <!-- Code brackets with enhanced styling -->
+  <path d="M58,65 L38,100 L58,135" 
+        stroke="url(#textGradient)" 
+        stroke-width="7" 
+        fill="none" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  <path d="M142,65 L162,100 L142,135" 
+        stroke="url(#textGradient)" 
+        stroke-width="7" 
+        fill="none" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  
+  <!-- Modern circuit elements -->
+  <path d="M30,85 L50,85 M30,115 L50,115 M150,85 L170,85 M150,115 L170,115" 
+        stroke="#2ecc71" 
+        stroke-width="2" 
+        stroke-linecap="round" />
+  <path d="M100,40 L100,60 M100,140 L100,160" 
+        stroke="#2ecc71" 
+        stroke-width="2" 
+        stroke-linecap="round" />
+  
+  <!-- Connection nodes -->
+  <circle cx="50" cy="85" r="4" fill="#2ecc71" />
+  <circle cx="50" cy="115" r="4" fill="#2ecc71" />
+  <circle cx="150" cy="85" r="4" fill="#2ecc71" />
+  <circle cx="150" cy="115" r="4" fill="#2ecc71" />
+  <circle cx="100" cy="60" r="4" fill="#2ecc71" />
+  <circle cx="100" cy="140" r="4" fill="#2ecc71" />
+  
+  <!-- Sophisticated text with drop shadow -->
+  <text x="100" y="107" 
+        font-family="'Segoe UI', Arial, sans-serif" 
+        font-weight="600" 
+        font-size="28" 
+        text-anchor="middle" 
+        fill="url(#textGradient)"
+        filter="url(#shadow)">gnrcccc</text>
+  
+  <!-- Binary pattern in background -->
+  <text x="66" y="42" 
+        font-family="monospace" 
+        font-size="7" 
+        fill="#2ecc71" 
+        opacity="0.25">01001</text>
+  <text x="133" y="42" 
+        font-family="monospace" 
+        font-size="7" 
+        fill="#2ecc71" 
+        opacity="0.25">10110</text>
+  <text x="42" y="160" 
+        font-family="monospace" 
+        font-size="7" 
+        fill="#2ecc71" 
+        opacity="0.25">01101</text>
+  <text x="140" y="160" 
+        font-family="monospace" 
+        font-size="7" 
+        fill="#2ecc71" 
+        opacity="0.25">10010</text>
+  
+  <!-- Subtle glow effects -->
+  <circle cx="100" cy="100" r="75" fill="none" stroke="#54c754" stroke-width="0.5" opacity="0.3" />
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#54c754" stroke-width="0.5" opacity="0.2" />
+  
+  <!-- Hint of motion with curved lines -->
+  <path d="M40,100 Q100,120 160,100" stroke="#2ecc71" stroke-width="0.7" fill="none" opacity="0.3" />
+  <path d="M40,90 Q100,70 160,90" stroke="#2ecc71" stroke-width="0.7" fill="none" opacity="0.3" />
+</svg>

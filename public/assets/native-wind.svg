@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions -->
+  <defs>
+    <!-- Gradient inspired by Tailwind blue shades -->
+    <linearGradient id="nativewindGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="50%" style="stop-color:#0284c7"/>
+      <stop offset="100%" style="stop-color:#0369a1"/>
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feComponentTransfer in="blur" result="glow">
+        <feFuncA type="linear" slope="1.5" intercept="-0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background shape - subtle hexagon reminiscent of React + Tailwind -->
+  <path d="M300,120 L450,200 L450,400 L300,480 L150,400 L150,200 Z" 
+        fill="url(#nativewindGradient)" filter="url(#shadow)" opacity="0.95"/>
+  
+  <!-- Mobile phone outline representing Native -->
+  <rect x="250" y="170" width="100" height="200" rx="18" ry="18" stroke="#ffffff" stroke-width="6" fill="none" filter="url(#glow)"/>
+  <rect x="275" y="180" width="50" height="6" rx="3" ry="3" fill="#ffffff"/>
+  <circle cx="300" cy="355" r="8" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+  
+  <!-- Wind effect (Tailwind representation) -->
+  <g transform="translate(300, 270)" filter="url(#glow)">
+    <!-- Wind lines with animation -->
+    <path d="M-90,30 C-50,0 -20,50 10,30 C40,10 60,50 90,30" 
+          stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.9">
+      <animate attributeName="d" 
+               values="M-90,30 C-50,0 -20,50 10,30 C40,10 60,50 90,30;
+                      M-90,35 C-50,5 -20,55 10,35 C40,15 60,55 90,35;
+                      M-90,30 C-50,0 -20,50 10,30 C40,10 60,50 90,30" 
+               dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-90,0 C-50,-30 -20,20 10,0 C40,-20 60,20 90,0" 
+          stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.7">
+      <animate attributeName="d" 
+               values="M-90,0 C-50,-30 -20,20 10,0 C40,-20 60,20 90,0;
+                      M-90,-5 C-50,-35 -20,15 10,-5 C40,-25 60,15 90,-5;
+                      M-90,0 C-50,-30 -20,20 10,0 C40,-20 60,20 90,0" 
+               dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-90,-30 C-50,-60 -20,-10 10,-30 C40,-50 60,-10 90,-30" 
+          stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.5">
+      <animate attributeName="d" 
+               values="M-90,-30 C-50,-60 -20,-10 10,-30 C40,-50 60,-10 90,-30;
+                      M-90,-25 C-50,-55 -20,-5 10,-25 C40,-45 60,-5 90,-25;
+                      M-90,-30 C-50,-60 -20,-10 10,-30 C40,-50 60,-10 90,-30" 
+               dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- NativeWind text -->
+  <g transform="translate(300, 490)">
+    <text x="0" y="0" font-family="'Inter', 'SF Pro Display', 'Segoe UI', Arial, sans-serif" 
+          font-size="42" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+      <tspan fill="#ffffff">Native</tspan><tspan fill="#bae6fd">Wind</tspan>
+    </text>
+  </g>
+  
+  <!-- Tailwind-inspired decorative line -->
+  <g transform="translate(300, 515)">
+    <rect x="-110" y="0" width="220" height="4" rx="2" ry="2" fill="#bae6fd" opacity="0.7"/>
+  </g>
+</svg>
