@@ -31,8 +31,10 @@ const About = () => {
                 Hi, I’m Ginric Alayon
               </p>
               <p className="text-[#afb0b6] text-base">
-                With 0.0002 years of experience, I have honed my skills in VB++
-                and C.Net.
+                I am Ginric Serrana Alayon, a 21-year-old Information Technology
+                student, specializing in full-stack web and mobile application
+                development. Currently pursuing my BSIT degree at The Fisher
+                Valley College.
               </p>
             </div>
           </div>
@@ -53,7 +55,7 @@ const About = () => {
               <p className="text-[#afb0b6] text-base">
                 I am quite knowledgeable in HTML, CSS, JavaScript, React,
                 Tailwind, Shadcn, Next.js, React Native, Expo, Git, Node.js,
-                Express.js, MongoDB, and MySQL.
+                Express.js, and MySQL.
               </p>
             </div>
           </div>

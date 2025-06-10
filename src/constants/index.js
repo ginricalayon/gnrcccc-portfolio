@@ -27,7 +27,8 @@ export const clientReviews = [
     name: "Maynard Quitoriano",
     position: "CEO",
     img: "assets/review4.png",
-    review: "Basta basta basta basta",
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
   },
 ];
 
